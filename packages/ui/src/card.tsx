@@ -1,4 +1,6 @@
-export function Card({
+import type { ReactNode } from 'react';
+
+export const Card = ({
   className,
   title,
   children,
@@ -6,20 +8,19 @@ export function Card({
 }: {
   className?: string;
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
   href: string;
-}): JSX.Element {
+}): ReactNode => {
   return (
     <a
       className={className}
       href={`${href}?utm_source=create-turbo&utm_medium=basic&utm_campaign=create-turbo"`}
       rel="noopener noreferrer"
-      target="_blank"
-    >
+      target="_blank">
       <h2>
         {title} <span>-&gt;</span>
       </h2>
       <p>{children}</p>
     </a>
   );
-}
+};

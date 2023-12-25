@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "jsx": "react",
+      "baseUrl": ".",
+      "composite": true,
+      "skipLibCheck": true,
+      "module": "ESNext",
+      "moduleResolution": "bundler",
+      "allowSyntheticDefaultImports": true
+    },
+    "types": ["vite/client"],
+    "include": ["./apps/**/*", "./packages/**/*"]
+  }
+  
